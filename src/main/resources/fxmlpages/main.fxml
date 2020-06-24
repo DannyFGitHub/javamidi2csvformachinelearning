@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="CENTER" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="midiforml.Controller">
+   <BorderPane fx:id="borderPane1" prefHeight="400.0" prefWidth="450.0">
+      <center>
+          <TextArea fx:id="textArea1" wrapText="true" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin></TextArea>
+      </center>
+      <bottom>
+          <Button fx:id="button" contentDisplay="CENTER" prefHeight="27.0" prefWidth="59.0" text="Refresh" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
+            <styleClass>
+               <String fx:value="btn" />
+               <String fx:value="btn-primary" />
+            </styleClass></Button>
+      </bottom>
+      <padding>
+         <Insets top="5.0" />
+      </padding>
+      <top>
+         <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER">
+            <children>
+               <ComboBox id="combox1synths" prefWidth="150.0" />
+               <Button id="activateButton" mnemonicParsing="false" text="Activate">
+                   <styleClass>
+                       <String fx:value="btn" />
+                       <String fx:value="btn-primary" />
+                   </styleClass></Button>
+               <Label id="outputSynthSelectlabel1" text="Select A Synth" textAlignment="CENTER" wrapText="true" />
+            </children>
+            <BorderPane.margin>
+               <Insets />
+            </BorderPane.margin></HBox>
+      </top></BorderPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
