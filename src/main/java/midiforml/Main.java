@@ -20,6 +20,8 @@ public class Main extends Application {
         Scene scene = new Scene(root, 500, 500);
         scene.getStylesheets().add("org/kordamp/bootstrapfx/bootstrapfx.css");
         primaryStage.setScene(scene);
+        primaryStage.setMinWidth(300);
+        primaryStage.setMinHeight(250);
         primaryStage.show();
     }
 
